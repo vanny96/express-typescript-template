@@ -13,12 +13,13 @@
     "watch": [
       "src"
     ],
-    "exec": "npm run prodstart",
+    "exec": "npm start",
     "ext": "ts"
   },
   "scripts": {
     "tsc": "tsc",
-    "prodstart": "tsc && node ./build/app.js",
+    "prestart": "tsc"
+    "start": "node ./build/app.js",
     "devstart": "nodemon"
   },
   "author": "",
