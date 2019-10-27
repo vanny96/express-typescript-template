@@ -1,5 +1,4 @@
 import express = require('express');
-import mongoose = require('mongoose');
 import cors = require('cors');
 
 import indexRouter from './routers/index';
@@ -7,9 +6,9 @@ import indexRouter from './routers/index';
 const app = express();
 
 // Database connection
-const mongoDbUrl = "mongodb://localhost:27017/projectName";
-mongoose.connect(mongoDbUrl, { useNewUrlParser: true });
-var db = mongoose.connection;
+// const mongoDbUrl = "mongodb://localhost:27017/projectName";
+// mongoose.connect(mongoDbUrl, { useNewUrlParser: true });
+// var db = mongoose.connection;
 
 // Configure app Cross Origin Resource Sharing
 app.use(cors());
